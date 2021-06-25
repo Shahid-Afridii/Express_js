@@ -1,0 +1,28 @@
+html
+    - var demo="Shahid";
+    head 
+        title  Learn express js 
+        style 
+            include index.css 
+    body 
+        h1.demo1 welcome to tenplates module
+        p#demo2 Join with me,learn with me
+        a(href="https://www.youtube.com") Click here
+        u1 
+            each val in ['Mongo db','Express','React','node']
+                li=val 
+        div 
+            if(user)
+                h1 Hello  #{user.name}
+            else 
+                a(href="https://www.youtube.com") Subscribe
+        div 
+            input(
+                type="text"
+                placeholder="Enter Your Name"
+            )
+        div 
+            h1=quotes 
+            h2=topic
+        div 
+            h1(style={color:'blue'}) Hello #{demo}
